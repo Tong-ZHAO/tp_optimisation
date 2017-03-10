@@ -14,7 +14,7 @@ function [F, G, ind]=OraclePG(qc, ind)
     F = 1/3 * H' * M + pr' * (Ar * H);
     G = B' * (M + Ar' * pr);
   else
-    error("The ind takes an invalid value.", 10001)
+    error("The ind takes an invalid value.", 10001);
   end
 
 endfunction
