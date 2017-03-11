@@ -38,6 +38,7 @@
    //
    // Exemple : la fonction "optim" de Scilab
    //
+   exec('OraclePH.sci');
    exec('OraclePG.sci');
    exec('Optim_Scilab.sci');
    titrgr = "Fonction optim de Scilab sur le probleme primal";
@@ -60,7 +61,7 @@
 
    // Exemple : la fonction "optim" de Scilab
    //
-   [fopt,xopt,gopt] = Optim_Scilab(OraclePG,xini);
+   [fopt,xopt,gopt] = Optim_Scilab(OraclePH,xini);
 
    // -----> A completer...
 
