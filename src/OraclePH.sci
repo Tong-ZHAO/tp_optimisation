@@ -24,7 +24,7 @@ function [F, G, H, ind]=OraclePH(qc, ind)
 
   elseif ind == 7 then
     [F G] = OraclePG(qc, 4);
-    H = 2 * B' * diag(r .* F_qc_abs) * B;
+    H = 2 * B' * diag(r .* v_qc_abs) * B;
     return;
 
   else
