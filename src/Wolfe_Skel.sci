@@ -45,7 +45,7 @@ function [alphan,ok]=Wolfe(alpha,x,D,Oracle)
 // ---------------------------------
 
    // Appel de l'oracle au point initial
-   
+
    ind = 4;
    [F,G] = Oracle(x,ind);
 
@@ -60,22 +60,46 @@ function [alphan,ok]=Wolfe(alpha,x,D,Oracle)
    // xp represente le point pour la valeur precedente du pas.
 
    while ok == 0
-      
+
       xp = xn;
       xn = x + (alphan*D);
 
       // Calcul des conditions de Wolfe
 
-      // -----> A completer...
-      // -----> A completer...
+      // Première condition :
+      [fn, gn] = Oracle(xn, ind);
+
+      [fp, gp] = Oracle(xp, ind);
+
+      ok1 = 0;
+      ok2 = 0;
+      if fn <= fp + omega1*alpha*gp'*D then
+        ok1 = 1;
+      end
+      // Seconde condition :
+      if gn'*D >= omega2*gp'*D then
+        ok2 = 1;
+      end
+      ok = ok1*ok2;
 
       // Test de la valeur de alphan :
       // - si les deux conditions de Wolfe sont verifiees,
       //   faire ok = 1 : on sort alors de la boucle while
       // - sinon, modifier la valeur de alphan : on reboucle.
 
-      // -----> A completer...
-      // -----> A completer...
+      if ok1 != 1 then
+        alphamax = alphan;
+        alphan = (alphamin + alphamax)/2;
+      end
+
+      if ok2 != 1 then
+        if alphamax == %inf then
+            alphamin = alphan;
+            alphan = 2*alphamin;
+        else
+            alphan = (alphamin + alphamax)/2;
+        end
+      end
 
       // Test d'indistinguabilite
 
