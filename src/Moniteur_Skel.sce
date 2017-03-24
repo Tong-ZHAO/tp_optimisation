@@ -18,11 +18,11 @@
 
    exec('Probleme_R.sce');
    exec('Structures_R.sce');
-   
+
    // Affichage des resultats
 
    exec('Visualg.sci');
-   
+
    // Verification  des resultats
 
    exec('HydrauliqueP.sci');
@@ -41,7 +41,9 @@
    exec('OraclePH.sci');
    exec('OraclePG.sci');
    exec('Optim_Scilab.sci');
-   titrgr = "Fonction optim de Scilab sur le probleme primal";
+   exec('Wolfe_Skel.sci');
+   exec('Gradient_W.sci');
+   titrgr = "Fonction gradient à pas variable de Scilab sur le probleme primal";
 
    // -----> A completer...
    // -----> A completer...
@@ -61,10 +63,10 @@
 
    // Exemple : la fonction "optim" de Scilab
    //
-   [fopt,xopt,gopt] = Optim_Scilab(OraclePH,xini);
+   //[fopt,xopt,gopt] = Optim_Scilab(OraclePH,xini);
 
    // -----> A completer...
-
+   [fopt,xopt,gopt] = Gradient_W(OraclePG,xini);
 // --------------------------
 // Verification des resultats
 // --------------------------

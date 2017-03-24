@@ -1,4 +1,4 @@
-function [alphan,ok]=Wolfe(alpha,x,D,Oracle)
+function [alphan,ok]=Wolfe(alpha, x, D, Oracle)
 
 
 //////////////////////////////////////////////////////////////
@@ -69,15 +69,14 @@ function [alphan,ok]=Wolfe(alpha,x,D,Oracle)
       // Première condition :
       [fn, gn] = Oracle(xn, ind);
 
-      [fp, gp] = Oracle(xp, ind);
 
       ok1 = 0;
       ok2 = 0;
-      if fn <= fp + omega1*alpha*gp'*D then
+      if fn <= F + omega1*alphan*G'*D then
         ok1 = 1;
       end
       // Seconde condition :
-      if gn'*D >= omega2*gp'*D then
+      if gn'*D >= omega2*G'*D then
         ok2 = 1;
       end
       ok = ok1*ok2;
@@ -87,18 +86,21 @@ function [alphan,ok]=Wolfe(alpha,x,D,Oracle)
       //   faire ok = 1 : on sort alors de la boucle while
       // - sinon, modifier la valeur de alphan : on reboucle.
 
-      if ok1 != 1 then
+      if ok1 ~= 1 then
+
         alphamax = alphan;
         alphan = (alphamin + alphamax)/2;
-      end
 
-      if ok2 != 1 then
+      elseif ok2 ~= 1 then
+
+        alphamin = alphan;
         if alphamax == %inf then
-            alphamin = alphan;
             alphan = 2*alphamin;
         else
             alphan = (alphamin + alphamax)/2;
         end
+      else
+        break
       end
 
       // Test d'indistinguabilite
