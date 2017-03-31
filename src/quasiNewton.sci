@@ -1,13 +1,5 @@
-function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
+function [fopt,xopt,gopt] = quasiNewton(Oracle,xini)
 
-
-///////////////////////////////////////////////////////////////////////////////
-//                                                                           //
-//         RESOLUTION D'UN PROBLEME D'OPTIMISATION SANS CONTRAINTES          //
-//                                                                           //
-//         Methode de gradient Wolfe                                  //
-//                                                                           //
-///////////////////////////////////////////////////////////////////////////////
 
 
 // ------------------------
@@ -39,13 +31,26 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
    x = xini;
 
    kstar = iter;
+   xpp = 0;
+   G = 0;
    for k = 1:iter
 
 //    - valeur du critere et du gradient
 
+      xp = x;
       ind = 4;
+      Gp = G;
       [F,G] = Oracle(x,ind);
 
+      m = length(G);
+      n = length(x);
+      if k == 1 then
+        W = eye(n,m);
+      else
+        deltaG = G - Gp;
+        deltaX = xp - xpp;
+        W = (eye(n,m) - (deltaX*deltaG')/(deltaG'*deltaX))*W*(eye(n,m) - (deltaX*deltaG')/(deltaG'*deltaX))' + (deltaX*deltaX')/(deltaG'*deltaX);
+      end
 //    - test de convergence
 
       if norm(G) <= tol then
@@ -55,7 +60,7 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
 
 //    - calcul de la direction de descente
 
-      D = -G;
+        D = - W*G;
 
 //    - calcul de la longueur du pas de gradient
 
@@ -64,6 +69,7 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
 //    - mise a jour des variables
 
       x = x + (alpha*D);
+      xpp = xp;
 
 //    - evolution du gradient, du pas et du critere
 

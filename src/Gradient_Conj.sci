@@ -1,13 +1,5 @@
-function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
+function [fopt,xopt,gopt] = Gradient_Conj( Oracle, xini )
 
-
-///////////////////////////////////////////////////////////////////////////////
-//                                                                           //
-//         RESOLUTION D'UN PROBLEME D'OPTIMISATION SANS CONTRAINTES          //
-//                                                                           //
-//         Methode de gradient Wolfe                                  //
-//                                                                           //
-///////////////////////////////////////////////////////////////////////////////
 
 
 // ------------------------
@@ -37,14 +29,15 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
 // -------------------------
 
    x = xini;
-
+   G = 0;
    kstar = iter;
    for k = 1:iter
 
 //    - valeur du critere et du gradient
 
       ind = 4;
-      [F,G] = Oracle(x,ind);
+      Gp = G;
+      [F,G] = Oracle( x, ind );
 
 //    - test de convergence
 
@@ -54,8 +47,12 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
       end
 
 //    - calcul de la direction de descente
-
-      D = -G;
+      if k == 1 then
+        D = - G;
+      else
+        Beta = G'*(G-Gp)/(norm(Gp, 2)^2);
+        D = - G + Beta*D;
+      end
 
 //    - calcul de la longueur du pas de gradient
 

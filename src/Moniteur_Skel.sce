@@ -43,6 +43,11 @@
    exec('Optim_Scilab.sci');
    exec('Wolfe_Skel.sci');
    exec('Gradient_W.sci');
+   exec('Gradient_Conj.sci');
+
+   exec('quasiNewton.sci');
+
+   exec('Newton.sci');
    titrgr = "Fonction gradient à pas variable de Scilab sur le probleme primal";
 
    // -----> A completer...
@@ -63,10 +68,22 @@
 
    // Exemple : la fonction "optim" de Scilab
    //
-   //[fopt,xopt,gopt] = Optim_Scilab(OraclePH,xini);
+   //[fopt,xopt,gopt] = Optim_Scilab( OraclePH, xini );
 
    // -----> A completer...
-   [fopt,xopt,gopt] = Gradient_W(OraclePG,xini);
+
+   // Wolfe
+   //[fopt,xopt,gopt] = Gradient_W( OraclePG, xini );
+
+   // Gradient conjugué Polak - Ribière
+   //[fopt,xopt,gopt] = Gradient_Conj( OraclePG, xini );
+
+   // Quasi Newton BFGS
+   //[fopt,xopt,gopt] = quasiNewton( OraclePG, xini );
+
+   // Newton avec pas de Wolfe. Attention il faut utiliser OraclePH
+
+   [fopt,xopt,gopt] = Newton( OraclePH, xini );
 // --------------------------
 // Verification des resultats
 // --------------------------

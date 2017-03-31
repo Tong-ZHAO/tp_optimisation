@@ -1,11 +1,11 @@
-function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
+function [fopt,xopt,gopt] = Newton(Oracle,xini)
 
 
 ///////////////////////////////////////////////////////////////////////////////
 //                                                                           //
 //         RESOLUTION D'UN PROBLEME D'OPTIMISATION SANS CONTRAINTES          //
 //                                                                           //
-//         Methode de gradient Wolfe                                  //
+//         Methode de Newton avec pas de  Wolfe                              //
 //                                                                           //
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -43,8 +43,8 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
 
 //    - valeur du critere et du gradient
 
-      ind = 4;
-      [F,G] = Oracle(x,ind);
+      ind = 7;
+      [F,G, H, ind] = Oracle(x,ind);
 
 //    - test de convergence
 
@@ -55,7 +55,7 @@ function [fopt,xopt,gopt]=Gradient_W(Oracle,xini)
 
 //    - calcul de la direction de descente
 
-      D = -G;
+      D = -inv(H)*G;
 
 //    - calcul de la longueur du pas de gradient
 
