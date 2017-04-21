@@ -48,6 +48,9 @@
    exec('quasiNewton.sci');
 
    exec('Newton.sci');
+
+   exec('OracleDG.sci');
+   exec('OracleDH.sci');
    titrgr = "Fonction gradient à pas variable de Scilab sur le probleme primal";
 
    // -----> A completer...
@@ -83,12 +86,15 @@
 
    // Newton avec pas de Wolfe. Attention il faut utiliser OraclePH
 
-   [fopt,xopt,gopt] = Newton( OraclePH, xini );
+   //[fopt,xopt,gopt] = Newton( OraclePH, xini );
 // --------------------------
 // Verification des resultats
 // --------------------------
 
-   [q,z,f,p] = HydrauliqueP(xopt);
+   lambda_ini = 0.1 * rand(md, 1);
+   [fopt,xopt,gopt] = Optim_Scilab(OracleDH,lambda_ini);
+   
+   [q,z,f,p] = HydrauliqueD(xopt);
 
    Verification(q,z,f,p);
 
