@@ -1,0 +1,274 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% University Assignment Title Page 
+% LaTeX Template
+% Version 1.0 (27/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% WikiBooks (http://en.wikibooks.org/wiki/LaTeX/Title_Creation)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Instructions for using this template:x
+% This title page is capable of being compiled as is. This is not useful for 
+% including it in another document. To do this, you have two options: 
+%
+% 1) Copy/paste everything between \begin{document} and \end{document} 
+% starting at \begin{titlepage} and paste this into another LaTeX file where you 
+% want your title page.
+% OR
+% 2) Remove everything outside the \begin{titlepage} and \end{titlepage} and 
+% move this file to the same directory as the LaTeX file you wish to add it to. 
+% Then add \input{./title_page_1.tex} to your LaTeX file where you want your
+% title page.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\title{Title page with logo}
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+
+\usepackage[utf8]{inputenc}
+% Use times if you have the font installed; otherwise, comment out the
+% following line.
+%\usepackage[latin]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
+\usepackage{float, caption}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+%\usepackage{bbold}
+%\usepackage{multirow}
+\usepackage{amsthm,amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Directory in which figures are stored
+
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{times}
+\usepackage{indentfirst}
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage[noend]{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\renewcommand{\algorithmicrequire}{\textbf{Input  :}}  
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\renewcommand{\baselinestretch}{1.6}
+
+% The preamble here sets up a lot of new/revised commands and
+% environments.  It's annoying, but please do *not* try to strip these
+% out into a separate .sty file (which could lead to the loss of some
+% information when we convert the file to other formats).  Instead, keep
+% them in the preamble of your main LaTeX source file.
+
+
+% The following parameters seem to provide a reasonable page setup.
+
+\topmargin 0.0cm
+\oddsidemargin 0.15cm
+\textwidth 16cm 
+\textheight 22cm
+\footskip 1.0cm
+\setlength{\parindent}{2em}
+
+
+%The next command sets up an environment for the abstract to your paper.
+
+\newenvironment{sciabstract}{%
+	\begin{quote} \bf}
+	{\end{quote}}
+
+
+% If your reference list includes text notes as well as references,
+% include the following line; otherwise, comment it out.
+
+\renewcommand\refname{References and Notes}
+
+% The following lines set up an environment for the last note in the
+% reference list, which commonly includes acknowledgments of funding,
+% help, etc.  It's intended for users of BibTeX or the {thebibliography}
+% environment.  Users who are hand-coding their references at the end
+% using a list environment such as {enumerate} can simply add another
+% item at the end, and it will be numbered automatically.
+
+\newcounter{lastnote}
+\newenvironment{scilastnote}{%
+\setcounter{lastnote}{\value{enumiv}}%
+\addtocounter{lastnote}{+1}%
+\begin{list}%
+{\arabic{lastnote}.}
+{\setlength{\leftmargin}{.15in}}
+{\setlength{\labelsep}{.5em}}}
+{\end{list}}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%   HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+\textsc{\LARGE Ecole Nationale des Ponts et Chaussées}\\[1.5cm] % Name of your university/college
+\textsc{\Large Optimisation et Contrôle}\\[0.5cm] % Major heading such as course name
+
+
+%----------------------------------------------------------------------------------------
+%   TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Projet sur les reseaux de distribution d'eau}\\[0.4cm] % Title of your document
+\HRule \\[1.5cm]
+ 
+%----------------------------------------------------------------------------------------
+%   AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+
+Author: \emph{\\ \vspace{0.8em} Matthieu TOULEMENT \\ Tong ZHAO}
+
+\end{center}
+
+
+% If you don't want a supervisor, uncomment the two lines below and remove the section above
+%\Large \emph{Author:}\\
+%John \textsc{Smith}\\[3cm] % Your name
+
+%----------------------------------------------------------------------------------------
+%   DATE SECTION
+%----------------------------------------------------------------------------------------
+
+{\large \today}\\[2cm] % Date, change the \today to a set date if you want to be precise
+
+%----------------------------------------------------------------------------------------
+%   LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=10em]{header_logo.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+ 
+%----------------------------------------------------------------------------------------
+
+\vfill % Fill the rest of the page with whitespace
+
+\end{titlepage}
+
+\section{Présentation du problème}
+
+On se concentre sur le problème de la résolution des équations décrivant l'état d'équilibre d'un réseau de distribution d'eau potable au cours de ce projet. 
+
+\section{Modélisation du problème}
+
+\section{Séance de TP No 1}
+
+Dans cette partie, on s'intéresse au problème primal d'optimisation sans contrainte.
+
+\vspace{-1.5em}
+\begin{align}
+  min_{q_C \in \mathbb{R}^{n-m_d}} \frac{1}{3} \left \langle q^{(0)} + B q_c, r \cdot (q^{(0)} + B q_c) \cdot |q^{(0)} + B q_c| \right \rangle + \left \langle p_r, A_r(q^{(0)} + B q_c) \right \rangle
+\end{align}
+
+\subsection{Le calcul du gradient}
+
+D'abord, on calcule le gradient du premier terme.
+
+\vspace{-1.5em}
+\begin{align}
+  f_1 (q_c) = \left \langle q^{(0)} + B q_c, r \cdot (q^{(0)} + B q_c) \cdot |q^{(0)} + B q_c| \right \rangle
+\end{align}
+
+On pose $q = q^{(0)} + B q_c$ et on calcule
+
+\vspace{-1.5em}
+\begin{align}
+  \cfrac{\partial f_1}{\partial q} &= \cfrac{\partial  \left \langle q, r \cdot q \cdot |q| \right \rangle}{\partial q} = \cfrac{\partial(r \cdot q \cdot q \cdot |q|)}{\partial q} = 3sign(q) \cdot r \cdot q \cdot q = 3r \cdot q \cdot |q|
+\end{align}
+
+Ensuite, on calcule le gradient du second terme.
+
+\vspace{-1.5em}
+\begin{align}
+  f_2 (q_c) = \left \langle p_r, A_r (q^{(0)} + B q_c) \right \rangle
+\end{align}
+
+\vspace{-1.5em}
+\begin{align}
+  \cfrac{\partial f_2}{\partial q} = \cfrac{\partial (p_r \cdot A_r q)}{\partial q} = A_r^T p_r
+\end{align}
+
+Sachant que $\cfrac{\partial q}{\partial q_c} = B^T$, on calcule le gradient de la fonction $F$.
+
+\vspace{-1.5em}
+\begin{align}
+  G(q_c) = \cfrac{\partial F}{\partial q_c} = \cfrac{\partial (3f_1 + f_2)}{\partial q} \cfrac{\partial q}{\partial q_c} = B^T (r \cdot q \cdot |q| + A_r^T p_r)
+\end{align}
+
+\subsection{Le calcul du hessien}
+
+On veut calculer:
+
+\vspace{-1.5em}
+\begin{align}
+  H(q_c) = \cfrac{\partial G}{\partial q_c} = \cfrac{\partial (B^T(r \cdot q \cdot |q| + A_r^T p_r))}{\partial q_c}
+\end{align}
+
+On pose $d = r \cdot q \cdot |q|$, alors
+
+\vspace{-1.5em}
+\begin{align}
+ H(q_c) = \cfrac{\partial (B^T d)}{\partial d} \cfrac{\partial d}{\partial q} \cfrac{\partial q}{\partial q_c} 
+\end{align}
+
+Sachant que:
+
+\vspace{-1.5em}
+\begin{align*}
+  \frac{\partial d}{\partial q} &=
+  \begin{bmatrix}
+    \frac{\partial d_1}{\partial q_1} & \cdots & \frac{\partial d_1}{\partial q_n} \\
+    \vdots & \ddots & \vdots \\
+    \frac{\partial d_n}{\partial q_1} & \cdots & \frac{\partial d_n}{\partial q_n}
+  \end{bmatrix} \mbox{\ \ \ d'où \ \ } \frac{\partial d_i}{\partial q_j} =
+  \begin{cases} 
+    2r_i|q_i|,  & i = j \\
+    0, & i \ne j
+  \end{cases}
+\end{align*}
+
+On a:
+
+\vspace{-1.5em}
+\begin{align}
+  \frac{\partial d}{\partial q} = diag((2r_i|q_i|)_{i=1 \cdots n})
+\end{align}
+
+On en déduit que:
+
+\vspace{-1.5em}
+\begin{align}
+ H(q_c) = 2B^T diag((2r_i|q_i|)_{i=1 \cdots n}) B 
+\end{align}
+
+
+\end{document}
+
+              
