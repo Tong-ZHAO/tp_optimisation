@@ -67,12 +67,12 @@ else
 
    xtitle(titrgr);
 
-   subplot(211);
+   subplot(121);
    plot2d(absX,logG,style=5,...
           leg='Norme du gradient (echelle logarithmique) '+...
               'en fonction des iterations');
 
-   subplot(212);
+   subplot(122);
    plot2d(absX,logP,style=2,...
           leg='Pas de gradient (echelle logarithmique) '+...
               'en fonction des iterations');

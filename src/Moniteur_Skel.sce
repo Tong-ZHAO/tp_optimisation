@@ -41,21 +41,18 @@
    exec('OraclePH.sci');
    exec('OraclePG.sci');
    exec('Optim_Scilab.sci');
+   exec('Gradient_F.sci');
    exec('Wolfe_Skel.sci');
    exec('Gradient_W.sci');
    exec('Gradient_Conj.sci');
 
    exec('quasiNewton.sci');
-
    exec('Newton.sci');
 
    exec('OracleDG.sci');
    exec('OracleDH.sci');
    titrgr = "Fonction gradient à pas variable de Scilab sur le probleme primal";
 
-   // -----> A completer...
-   // -----> A completer...
-   // -----> A completer...
 
 // ------------------------------
 // Initialisation de l'algorithme
@@ -70,13 +67,13 @@
 // ----------------------------
 
    // Exemple : la fonction "optim" de Scilab
-   //
-   //[fopt,xopt,gopt] = Optim_Scilab( OraclePH, xini );
+   //[fopt,xopt,gopt] = Optim_Scilab( OraclePG, xini );
 
-   // -----> A completer...
+   // Gradient à pas fixe
+   //[fopt,xopt,gopt] = Gradient_F( OraclePG, xini );
 
    // Wolfe
-   //[fopt,xopt,gopt] = Gradient_W( OraclePG, xini );
+   // [fopt,xopt,gopt] = Gradient_W( OraclePG, xini );
 
    // Gradient conjugué Polak - Ribière
    //[fopt,xopt,gopt] = Gradient_Conj( OraclePG, xini );
@@ -86,14 +83,32 @@
 
    // Newton avec pas de Wolfe. Attention il faut utiliser OraclePH
 
-   //[fopt,xopt,gopt] = Newton( OraclePH, xini );
+   // [fopt,xopt,gopt] = Newton( OraclePH, xini );
+
 // --------------------------
 // Verification des resultats
 // --------------------------
 
    lambda_ini = 0.1 * rand(md, 1);
-   [fopt,xopt,gopt] = Optim_Scilab(OracleDH,lambda_ini);
    
+   // Exemple : la fonction "optim" de Scilab
+   // [fopt,xopt,gopt] = Optim_Scilab(OracleDG, lambda_ini);
+
+   // Gradient à pas fixe 
+   // [fopt,xopt,gopt] = Gradient_F(OracleDG, lambda_ini);
+
+   // Wolfe
+   // [fopt,xopt,gopt] = Gradient_W(OracleDG, lambda_ini);
+
+   // Gradient conjugué Polak - Ribière
+   // [fopt,xopt,gopt] = Gradient_Conj(OracleDG, lambda_ini);
+
+   // Quasi Newton BFGS
+   // [fopt,xopt,gopt] = quasiNewton( OracleDG, lambda_ini);
+
+   // Newton avec pas de Wolfe. Attention il faut utiliser OraclePH
+   [fopt,xopt,gopt] = Newton( OracleDH, lambda_ini);
+
    [q,z,f,p] = HydrauliqueD(xopt);
 
    Verification(q,z,f,p);

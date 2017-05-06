@@ -1,12 +1,10 @@
 function [fopt,xopt,gopt] = quasiNewton(Oracle,xini)
 
-
-
 // ------------------------
 // Parametres de la methode
 // ------------------------
 
-   titre = "Parametres du gradient a pas fixe";
+   titre = "Parametres du gradient quasi-Newton";
    labels = ["Nombre maximal d''iterations";...
              "Valeur du pas de gradient";...
              "Seuil de convergence sur ||G||"];
@@ -93,7 +91,7 @@ function [fopt,xopt,gopt] = quasiNewton(Oracle,xini)
            'Temps CPU         : ' string(tcpu);...
            'Critere optimal   : ' string(fopt);...
            'Norme du gradient : ' string(norm(gopt))];
-   disp('Fin de la methode de gradient a pas fixe')
+   disp('Fin de la methode de gradient quasi-Newton')
    disp(cvge)
 
 // - visualisation de la convergence

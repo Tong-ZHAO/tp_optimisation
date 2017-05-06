@@ -18,12 +18,12 @@ function [F, G, H, ind]=OracleDH(lambda, ind)
 
   elseif ind == 6 then
     G = - Ad * ql + fd;
-    H = - Ad * diag(dc) * Ad;
+    H = - Ad * diag(dc) * Ad';
     return;
 
   elseif ind == 7 then
     [F G] = OracleDG(lambda, 4);
-    H = - Ad * diag(dc) * Ad;
+    H = - Ad * diag(dc) * Ad';
     return;
 
   else

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.19)  23 APR 2017 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.19)  6 MAY 2017 14:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/zt/enpc/optim/tp1/projet.tex
-(/Users/zt/enpc/optim/tp1/projet.tex
+**/Users/zt/enpc/optim/tp_optimisation/rapport/projet.tex
+(/Users/zt/enpc/optim/tp_optimisation/rapport/projet.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/article.cls
@@ -763,6 +763,50 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count114
 Package caption Info: float package is loaded.
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
+\c@subfigure=\count115
+\c@subtable=\count116
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box39
+)
+\tc@llx=\dimen161
+\tc@lly=\dimen162
+\tc@urx=\dimen163
+\tc@ury=\dimen164
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen165
+\adjbox@Height=\dimen166
+\adjbox@Depth=\dimen167
+\adjbox@Totalheight=\dimen168
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count117
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box40
+\sift@deathcycles=\count118
+\@vwid@loff=\dimen169
+\@vwid@roff=\dimen170
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks33
@@ -782,46 +826,46 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
-\ex@=\dimen161
+\ex@=\dimen171
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen162
+\pmbraise@=\dimen172
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count115
+\inf@bad=\count119
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count116
-\leftroot@=\count117
+\uproot@=\count120
+\leftroot@=\count121
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count118
-\DOTSCASE@=\count119
+\classnum@=\count122
+\DOTSCASE@=\count123
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box39
-\strutbox@=\box40
-\big@size=\dimen163
+\Mathstrutbox@=\box41
+\strutbox@=\box42
+\big@size=\dimen173
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count120
-\c@MaxMatrixCols=\count121
+\macc@depth=\count124
+\c@MaxMatrixCols=\count125
 \dotsspace@=\muskip10
-\c@parentequation=\count122
-\dspbrk@lvl=\count123
+\c@parentequation=\count126
+\dspbrk@lvl=\count127
 \tag@help=\toks35
-\row@=\count124
-\column@=\count125
-\maxfields@=\count126
+\row@=\count128
+\column@=\count129
+\maxfields@=\count130
 \andhelp@=\toks36
-\eqnshift@=\dimen164
-\alignsep@=\dimen165
-\tagshift@=\dimen166
-\tagwidth@=\dimen167
-\totwidth@=\dimen168
-\lineht@=\dimen169
+\eqnshift@=\dimen174
+\alignsep@=\dimen175
+\tagshift@=\dimen176
+\tagwidth@=\dimen177
+\totwidth@=\dimen178
+\lineht@=\dimen179
 \@envbody=\toks37
 \multlinegap=\skip47
 \multlinetaggap=\skip48
@@ -847,10 +891,13 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen180
+)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen170
-\extrarowheight=\dimen171
+\col@sep=\dimen181
+\extrarowheight=\dimen182
 \NC@list=\toks45
 \extratabsurround=\skip52
 \backup@length=\skip53
@@ -871,35 +918,35 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count127
-\l_MT_multwidth_dim=\dimen172
+\g_MT_multlinerow_int=\count131
+\l_MT_multwidth_dim=\dimen183
 \origjot=\skip54
-\l_MT_shortvdotswithinadjustabove_dim=\dimen173
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen174
-\l_MT_above_intertext_sep=\dimen175
-\l_MT_below_intertext_sep=\dimen176
-\l_MT_above_shortintertext_sep=\dimen177
-\l_MT_below_shortintertext_sep=\dimen178
+\l_MT_shortvdotswithinadjustabove_dim=\dimen184
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen185
+\l_MT_above_intertext_sep=\dimen186
+\l_MT_below_intertext_sep=\dimen187
+\l_MT_above_shortintertext_sep=\dimen188
+\l_MT_below_shortintertext_sep=\dimen189
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count128
-\lst@gtempboxa=\box41
+\lst@mode=\count132
+\lst@gtempboxa=\box43
 \lst@token=\toks46
-\lst@length=\count129
-\lst@currlwidth=\dimen179
-\lst@column=\count130
-\lst@pos=\count131
-\lst@lostspace=\dimen180
-\lst@width=\dimen181
-\lst@newlines=\count132
-\lst@lineno=\count133
-\lst@maxwidth=\dimen182
+\lst@length=\count133
+\lst@currlwidth=\dimen190
+\lst@column=\count134
+\lst@pos=\count135
+\lst@lostspace=\dimen191
+\lst@width=\dimen192
+\lst@newlines=\count136
+\lst@lineno=\count137
+\lst@maxwidth=\dimen193
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count134
-\lst@skipnumbers=\count135
-\lst@framebox=\box42
+\c@lstnumber=\count138
+\lst@skipnumbers=\count139
+\lst@framebox=\box44
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -916,7 +963,7 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks47
-\c@algorithm=\count136
+\c@algorithm=\count140
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -925,50 +972,50 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count137
-\c@ALG@rem=\count138
-\c@ALG@nested=\count139
+\c@ALG@line=\count141
+\c@ALG@rem=\count142
+\c@ALG@nested=\count143
 \ALG@tlm=\skip55
 \ALG@thistlm=\skip56
-\c@ALG@Lnr=\count140
-\c@ALG@blocknr=\count141
-\c@ALG@storecount=\count142
-\c@ALG@tmpcounter=\count143
+\c@ALG@Lnr=\count144
+\c@ALG@blocknr=\count145
+\c@ALG@storecount=\count146
+\c@ALG@tmpcounter=\count147
 \ALG@tmplength=\skip57
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-\c@lastnote=\count144
+\c@lastnote=\count148
  (./projet.aux)
 \openout1 = `projet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
-LaTeX Font Info:    ... okay on input line 118.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 118.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 121.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
-\scratchdimen=\dimen183
-\scratchbox=\box43
-\nofMPsegments=\count146
-\nofMParguments=\count147
+\scratchcounter=\count149
+\scratchdimen=\dimen194
+\scratchbox=\box45
+\nofMPsegments=\count150
+\nofMParguments=\count151
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count148
-\MPscratchDim=\dimen184
-\MPnumerator=\count149
-\makeMPintoPDFobject=\count150
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen195
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks49
 ) (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1004,61 +1051,323 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count151
+\c@lstlisting=\count155
 
 <figures/header_logo.png, id=4, 1061.9675pt x 1390.19376pt>
 File: figures/header_logo.png Graphic file (type png)
 
 <use figures/header_logo.png>
-Package pdftex.def Info: figures/header_logo.png used on input line 167.
+Package pdftex.def Info: figures/header_logo.png used on input line 170.
 (pdftex.def)             Requested size: 100.0pt x 130.90308pt.
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
 es/header_logo.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 186.
+<figures/reseau.png, id=15, 404.51125pt x 209.78375pt>
+File: figures/reseau.png Graphic file (type png)
+
+<use figures/reseau.png>
+Package pdftex.def Info: figures/reseau.png used on input line 183.
+(pdftex.def)             Requested size: 200.0pt x 103.72322pt.
+LaTeX Font Info:    Try loading font information for U+msa on input line 189.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 186.
+LaTeX Font Info:    Try loading font information for U+msb on input line 189.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 186.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 189.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1] [2]
-(./projet.aux) ) 
+)
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 195.
+
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 195.
+ [1 <./figures/reseau.png>] [2] [3] <figures/pg_scilab.png, id=38, 428.60126pt 
+x 127.47626pt>
+File: figures/pg_scilab.png Graphic file (type png)
+
+<use figures/pg_scilab.png>
+Package pdftex.def Info: figures/pg_scilab.png used on input line 351.
+(pdftex.def)             Requested size: 200.0pt x 59.48396pt.
+
+<figures/pg_fix.png, id=39, 346.29375pt x 146.5475pt>
+File: figures/pg_fix.png Graphic file (type png)
+ <use figures/pg_fix.png>
+Package pdftex.def Info: figures/pg_fix.png used on input line 354.
+(pdftex.def)             Requested size: 150.0pt x 63.4793pt.
+
+Overfull \hbox (21.89514pt too wide) in paragraph at lines 350--356
+[][] [] 
+ []
+
+<figures/pg_scilab_v.png, id=40, 399.4925pt x 87.32625pt>
+File: figures/pg_scilab_v.png Graphic file (type png)
+
+<use figures/pg_scilab_v.png>
+Package pdftex.def Info: figures/pg_scilab_v.png used on input line 358.
+(pdftex.def)             Requested size: 200.0pt x 43.71898pt.
+
+<figures/pg_fix_v.png, id=41, 415.5525pt x 95.35625pt>
+File: figures/pg_fix_v.png Graphic file (type png)
+
+<use figures/pg_fix_v.png>
+Package pdftex.def Info: figures/pg_fix_v.png used on input line 362.
+(pdftex.def)             Requested size: 200.0pt x 45.89415pt.
+
+Overfull \hbox (21.89514pt too wide) in paragraph at lines 357--365
+[][] [] 
+ []
+
+<figures/pg_fix_f.png, id=42, 650.43pt x 701.62125pt>
+File: figures/pg_fix_f.png Graphic file (type png)
+
+<use figures/pg_fix_f.png>
+Package pdftex.def Info: figures/pg_fix_f.png used on input line 370.
+(pdftex.def)             Requested size: 200.0pt x 215.73386pt.
+ [4 <./figures/pg_scilab.png> <./figures/pg_fix.png> <./figures/pg_scilab_v.png
+> <./figures/pg_fix_v.png> <./figures/pg_fix_f.png>]
+Overfull \hbox (10.4864pt too wide) in paragraph at lines 383--384
+[]\T1/ptm/m/n/10 Dans cette par-tie, on va pro-gram-mer une recherche linéaire 
+véri-fi-ant les con-di-tions de Wolfe et coder l'algorithme
+ []
+
+<figures/wolfe.png, id=51, 397.485pt x 146.5475pt>
+File: figures/wolfe.png Graphic file (type png)
+ <use figures/wolfe.png>
+Package pdftex.def Info: figures/wolfe.png used on input line 399.
+(pdftex.def)             Requested size: 200.0pt x 73.73866pt.
+
+<figures/wolfe_v.png, id=52, 414.54875pt x 88.33pt>
+File: figures/wolfe_v.png Graphic file (type png)
+ <use figures/wolfe_v.png>
+Package pdftex.def Info: figures/wolfe_v.png used on input line 401.
+(pdftex.def)             Requested size: 200.0pt x 42.6149pt.
+
+<figures/wolfe_f.png, id=53, 668.4975pt x 723.70375pt>
+File: figures/wolfe_f.png Graphic file (type png)
+
+<use figures/wolfe_f.png>
+Package pdftex.def Info: figures/wolfe_f.png used on input line 404.
+(pdftex.def)             Requested size: 200.0pt x 216.51648pt.
+ [5 <./figures/wolfe.png> <./figures/wolfe_v.png>]
+<figures/conj.png, id=59, 421.575pt x 135.50626pt>
+File: figures/conj.png Graphic file (type png)
+ <use figures/conj.png>
+Package pdftex.def Info: figures/conj.png used on input line 438.
+(pdftex.def)             Requested size: 200.0pt x 64.28549pt.
+
+<figures/conj_v.png, id=60, 423.5825pt x 87.32625pt> [6 <./figures/wolfe_f.png>
+]
+File: figures/conj_v.png Graphic file (type png)
+ <use figures/conj_v.png>
+Package pdftex.def Info: figures/conj_v.png used on input line 440.
+(pdftex.def)             Requested size: 200.0pt x 41.23122pt.
+ <figures/conj_f.png, id=66, 682.55pt x 726.715pt>
+File: figures/conj_f.png Graphic file (type png)
+
+<use figures/conj_f.png>
+Package pdftex.def Info: figures/conj_f.png used on input line 443.
+(pdftex.def)             Requested size: 200.0pt x 212.93752pt.
+ <figures/quasi.png, id=67, 438.63875pt x 151.56625pt>
+File: figures/quasi.png Graphic file (type png)
+
+<use figures/quasi.png>
+Package pdftex.def Info: figures/quasi.png used on input line 460.
+(pdftex.def)             Requested size: 200.0pt x 69.10844pt.
+ <figures/quasi_v.png, id=68, 432.61626pt x 91.34125pt>
+[7 <./figures/conj.png> <./figures/conj_v.png> <./figures/conj_f.png>]
+File: figures/quasi_v.png Graphic file (type png)
+
+<use figures/quasi_v.png>
+Package pdftex.def Info: figures/quasi_v.png used on input line 462.
+(pdftex.def)             Requested size: 200.0pt x 42.22794pt.
+ <figures/quasi_f.png, id=75, 666.49pt x 722.7pt>
+File: figures/quasi_f.png Graphic file (type png)
+
+<use figures/quasi_f.png>
+Package pdftex.def Info: figures/quasi_f.png used on input line 465.
+(pdftex.def)             Requested size: 200.0pt x 216.8668pt.
+ <figures/newton.png, id=76, 405.515pt x 144.54pt>
+File: figures/newton.png Graphic file (type png)
+
+<use figures/newton.png>
+Package pdftex.def Info: figures/newton.png used on input line 477.
+(pdftex.def)             Requested size: 200.0pt x 71.28836pt.
+ <figures/newton_v.png, id=77, 437.635pt x 85.31876pt>
+File: figures/newton_v.png Graphic file (type png)
+
+<use figures/newton_v.png>
+Package pdftex.def Info: figures/newton_v.png used on input line 479.
+(pdftex.def)             Requested size: 200.0pt x 38.99062pt.
+ [8 <./figures/quasi.png> <./figures/quasi_v.png> <./figures/quasi_f.png> <./fi
+gures/newton.png>]
+<figures/newton_f.png, id=85, 597.23125pt x 731.73375pt>
+File: figures/newton_f.png Graphic file (type png)
+
+<use figures/newton_f.png>
+Package pdftex.def Info: figures/newton_f.png used on input line 482.
+(pdftex.def)             Requested size: 200.0pt x 245.04579pt.
+ [9 <./figures/newton_v.png> <./figures/newton_f.png>] [10] <figures/d_scilab.p
+ng, id=95, 455.7025pt x 118.4425pt>
+File: figures/d_scilab.png Graphic file (type png)
+
+<use figures/d_scilab.png>
+Package pdftex.def Info: figures/d_scilab.png used on input line 602.
+(pdftex.def)             Requested size: 200.0pt x 51.98291pt.
+
+<figures/d_scilab_v.png, id=96, 435.6275pt x 96.36pt>
+File: figures/d_scilab_v.png Graphic file (type png)
+
+<use figures/d_scilab_v.png>
+Package pdftex.def Info: figures/d_scilab_v.png used on input line 603.
+(pdftex.def)             Requested size: 200.0pt x 44.23936pt.
+
+<figures/d_fixe.png, id=97, 432.61626pt x 145.54375pt>
+File: figures/d_fixe.png Graphic file (type png)
+
+<use figures/d_fixe.png>
+Package pdftex.def Info: figures/d_fixe.png used on input line 610.
+(pdftex.def)             Requested size: 200.0pt x 67.28627pt.
+
+<figures/d_fixe_v.png, id=98, 416.55624pt x 87.32625pt>
+File: figures/d_fixe_v.png Graphic file (type png)
+
+<use figures/d_fixe_v.png>
+Package pdftex.def Info: figures/d_fixe_v.png used on input line 611.
+(pdftex.def)             Requested size: 200.0pt x 41.92812pt.
+ [11 <./figures/d_scilab.png> <./figures/d_scilab_v.png>] <figures/d_fixe_f.png
+, id=104, 1317.92375pt x 636.3775pt>
+File: figures/d_fixe_f.png Graphic file (type png)
+
+<use figures/d_fixe_f.png>
+Package pdftex.def Info: figures/d_fixe_f.png used on input line 614.
+(pdftex.def)             Requested size: 399.98534pt x 149.9954pt.
+
+<figures/d_wolfe.png, id=105, 457.71pt x 146.5475pt>
+File: figures/d_wolfe.png Graphic file (type png)
+ <use figures/d_wolfe.png>
+Package pdftex.def Info: figures/d_wolfe.png used on input line 623.
+(pdftex.def)             Requested size: 200.0pt x 64.03386pt.
+
+<figures/d_wolfe_v.png, id=106, 438.63875pt x 87.32625pt>
+File: figures/d_wolfe_v.png Graphic file (type png)
+
+<use figures/d_wolfe_v.png>
+Package pdftex.def Info: figures/d_wolfe_v.png used on input line 624.
+(pdftex.def)             Requested size: 200.0pt x 39.81744pt.
+
+<figures/d_wolfe_f.png, id=107, 1301.86375pt x 633.86812pt>
+File: figures/d_wolfe_f.png Graphic file (type png)
+
+<use figures/d_wolfe_f.png>
+Package pdftex.def Info: figures/d_wolfe_f.png used on input line 627.
+(pdftex.def)             Requested size: 399.99792pt x 149.99393pt.
+ [12 <./figures/d_fixe.png> <./figures/d_fixe_v.png> <./figures/d_fixe_f.png> <
+./figures/d_wolfe.png> <./figures/d_wolfe_v.png>]
+<figures/d_conj.png, id=117, 436.63126pt x 142.5325pt>
+File: figures/d_conj.png Graphic file (type png)
+
+<use figures/d_conj.png>
+Package pdftex.def Info: figures/d_conj.png used on input line 636.
+(pdftex.def)             Requested size: 200.0pt x 65.28735pt.
+ <figures/d_conj_v.png, id=118, 442.65375pt x 96.36pt>
+File: figures/d_conj_v.png Graphic file (type png)
+
+<use figures/d_conj_v.png>
+Package pdftex.def Info: figures/d_conj_v.png used on input line 637.
+(pdftex.def)             Requested size: 200.0pt x 43.53802pt.
+
+<figures/d_conj_f.png, id=119, 1305.87875pt x 637.88312pt>
+File: figures/d_conj_f.png Graphic file (type png)
+
+<use figures/d_conj_f.png>
+Package pdftex.def Info: figures/d_conj_f.png used on input line 640.
+(pdftex.def)             Requested size: 399.99612pt x 149.99988pt.
+
+<figures/d_quasi.png, id=120, 470.75874pt x 143.53625pt>
+File: figures/d_quasi.png Graphic file (type png)
+
+<use figures/d_quasi.png>
+Package pdftex.def Info: figures/d_quasi.png used on input line 647.
+(pdftex.def)             Requested size: 200.0pt x 60.98128pt.
+
+<figures/d_quasi_v.png, id=121, 439.6425pt x 90.3375pt>
+File: figures/d_quasi_v.png Graphic file (type png)
+
+<use figures/d_quasi_v.png>
+Package pdftex.def Info: figures/d_quasi_v.png used on input line 648.
+(pdftex.def)             Requested size: 200.0pt x 41.09534pt.
+ [13 <./figures/d_wolfe_f.png> <./figures/d_conj.png> <./figures/d_conj_v.png> 
+<./figures/d_conj_f.png> <./figures/d_quasi.png> <./figures/d_quasi_v.png>]
+<figures/d_quasi_f.png, id=131, 1316.92pt x 641.39626pt>
+File: figures/d_quasi_f.png Graphic file (type png)
+
+<use figures/d_quasi_f.png>
+Package pdftex.def Info: figures/d_quasi_f.png used on input line 651.
+(pdftex.def)             Requested size: 400.00221pt x 149.99411pt.
+
+<figures/d_newton.png, id=132, 431.6125pt x 148.555pt>
+File: figures/d_newton.png Graphic file (type png)
+
+<use figures/d_newton.png>
+Package pdftex.def Info: figures/d_newton.png used on input line 658.
+(pdftex.def)             Requested size: 200.0pt x 68.83707pt.
+
+<figures/d_newton_v.png, id=133, 413.545pt x 88.33pt>
+File: figures/d_newton_v.png Graphic file (type png)
+
+<use figures/d_newton_v.png>
+Package pdftex.def Info: figures/d_newton_v.png used on input line 659.
+(pdftex.def)             Requested size: 200.0pt x 42.71869pt.
+
+<figures/d_newton_f.png, id=134, 1324.95pt x 634.37pt>
+File: figures/d_newton_f.png Graphic file (type png)
+
+<use figures/d_newton_f.png>
+Package pdftex.def Info: figures/d_newton_f.png used on input line 662.
+(pdftex.def)             Requested size: 399.99498pt x 149.99654pt.
+ [14 <./figures/d_quasi_f.png> <./figures/d_newton.png> <./figures/d_newton_v.p
+ng> <./figures/d_newton_f.png>] [15] (./projet.aux) ) 
 Here is how much of TeX's memory you used:
- 17335 strings out of 493014
- 321221 string characters out of 6133351
- 368904 words of memory out of 5000000
- 20508 multiletter control sequences out of 15000+600000
- 43135 words of font info for 47 fonts, out of 8000000 for 9000
+ 18128 strings out of 493014
+ 335415 string characters out of 6133351
+ 382303 words of memory out of 5000000
+ 21229 multiletter control sequences out of 15000+600000
+ 51382 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,16n,92p,441b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/
-texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on projet.pdf (3 pages, 306037 bytes).
+ 62i,16n,92p,647b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/t
+exmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy5.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/u
+rw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/u
+tmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on projet.pdf (16 pages, 858030 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 197 PDF objects out of 1000 (max. 8388607)
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
